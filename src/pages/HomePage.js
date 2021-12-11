@@ -1,6 +1,7 @@
 import React from "react";
 import SideBar from "../components/SideBar";
 import classes from "./HomePage.module.css";
+
 const HomePage = (props) => {
   var dots = [],
     mouse = {
@@ -12,7 +13,7 @@ const HomePage = (props) => {
   var Dot = function () {
     this.x = 0;
     this.y = 0;
-    
+
     this.node = (function () {
       var n = document.createElement("div");
       n.className = classes.trail;
@@ -28,7 +29,7 @@ const HomePage = (props) => {
   };
 
   // Creates the Dot objects, populates the dots array
-  for (var i = 0; i < 30; i++) {
+  for (var i = 0; i < 100; i++) {
     var d = new Dot();
     dots.push(d);
   }
@@ -37,8 +38,8 @@ const HomePage = (props) => {
   function draw() {
     // Make sure the mouse position is set everytime
     // draw() is called.
-    var x = mouse.x+150,
-      y = mouse.y-150;
+    var x = mouse.x + 150,
+      y = mouse.y - 150;
 
     // This loop is where all the 90s magic happens
     dots.forEach(function (dot, index, dots) {
@@ -47,8 +48,8 @@ const HomePage = (props) => {
       dot.x = x;
       dot.y = y;
       dot.draw();
-      x += (nextDot.x - dot.x) * 0.6;
-      y += (nextDot.y - dot.y) * 0.6;
+      x += (nextDot.x - dot.x) * 0.2;
+      y += (nextDot.y - dot.y) * 0.2;
     });
   }
 
@@ -70,42 +71,53 @@ const HomePage = (props) => {
 
   return (
     <div className={classes.homepage}>
-      <SideBar />
+      <div className={classes.sidedisp}>
+        <SideBar />
+      </div>
+
       <div className={classes.content}>
-        <span>H</span>
-        <span>e</span>
-        <span>y</span>
-        <span>,&nbsp;</span>
-        <br />
-        <span>I</span>
-        <span>'</span>
-        <span>m&nbsp;</span>
-        <span>S</span>
-        <span>r</span>
-        <span>e</span>
-        <span>y</span>
-        <span>a</span>
-        <span>s</span>
-        <span>,</span>
-        <br />
-        <span>F</span>
-        <span>u</span>
-        <span>l</span>
-        <span>l</span>
-        <span>s</span>
-        <span>t</span>
-        <span>a</span>
-        <span>c</span>
-        <span>k&nbsp;</span>
-        <span>d</span>
-        <span>e</span>
-        <span>v</span>
-        <span>e</span>
-        <span>l</span>
-        <span>o</span>
-        <span>p</span>
-        <span>e</span>
-        <span>r</span>
+        <h5>&lt;html&gt;</h5>
+        <h5 style={{ padding: "0 2%" }}>&lt;body&gt;</h5>
+        <h5 style={{ padding: "12vh 0 0 3%" }}>&lt;h1&gt;</h5>
+        <div className={classes.title}>
+          <span>H</span>
+          <span>e</span>
+          <span>y</span>
+          <span>,&nbsp;</span>
+          <br />
+          <span>I</span>
+          <span>'</span>
+          <span>m&nbsp;</span>
+          <span>S</span>
+          <span>r</span>
+          <span>e</span>
+          <span>y</span>
+          <span>a</span>
+          <span>s</span>
+          <span>,</span>
+          <br />
+          <span>F</span>
+          <span>u</span>
+          <span>l</span>
+          <span>l</span>
+          <span>s</span>
+          <span>t</span>
+          <span>a</span>
+          <span>c</span>
+          <span>k&nbsp;</span>
+          <span>d</span>
+          <span>e</span>
+          <span>v</span>
+          <span>e</span>
+          <span>l</span>
+          <span>o</span>
+          <span>p</span>
+          <span>e</span>
+          <span>r</span>
+        </div>
+        <h5 style={{ paddingLeft: "3%" }}>&lt;/h1&gt;</h5>
+        <h5 style={{ paddingLeft: "3%" }}>&lt;p&gt;</h5>
+        <p>Profficient with Flutter, ReactJs & Express</p>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@
 }
 .sidebar{
     display:flex;
-    width:100%;
+    width:120px;
     background-color:#181818;
     flex-direction: column;
     height:100vh;
@@ -41,8 +41,4 @@
     color:#08FDD8;
 }
 
-@media only screen and (min-width: 1280px){
-    .sidebar{
-        width:120px;
-    }
-}
+

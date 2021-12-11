@@ -1,22 +1,40 @@
 .homepage {
   display: flex;
 }
+.sidedisp{
+  display:none;
+}
+
 .content {
   width: 100%;
-  padding: 25vh 8%;
+  padding: 5vh 2%;
 }
-.content span {
-  display: inline-block;
-  font-family: "Readex Pro", sans-serif;
-  font-weight:900;
-  color:white;
-  font-size: 80px;
-  transition: color 0.1s ease-in;
+
+.content h5{
+  font-family: 'Caveat', cursive;
+  color:rgb(92, 91, 91);
+  font-size:20px;
+  font-weight: 100;
+  font-style: italic;
 }
 .content span:hover {
   -webkit-animation: rubberband 0.8s linear;
   color:#08fdd8;
 }
+
+.title{
+  padding:0 6%;
+}
+.title span {
+  display: inline-block;
+  font-family: "Readex Pro", sans-serif;
+  font-weight:900;
+  color:white;
+  font-size: 30px;
+  
+  transition: color 0.1s ease-in;
+}
+
 
 @keyframes rubberband {
   0% {
@@ -37,7 +55,17 @@
 }
 .trail { /* className for the trail elements */
   position: absolute;
-  height: 3px; width: 3px;
-  border-radius: 10px;
-  background: linear-gradient(rgb(170, 66, 66),rgb(146, 12, 12));
+  height: 3px; width: 4px;
+  border-radius: 100px;
+  background-color: rgb(207, 113, 129);
+  /* size:10px; */
+  /* background: linear-gradient(rgb(170, 66, 66),rgb(146, 12, 12)); */
+}
+@media only screen and (min-width: 1280px){
+  .sidedisp{
+      display:block;
+  }
+  .title span{
+    font-size: 80px;
+  }
 }
