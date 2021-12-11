@@ -117,8 +117,11 @@ const HomePage = (props) => {
         </div>
         <h5 style={{ paddingLeft: "3%" }}>&lt;/h1&gt;</h5>
         <h5 style={{ paddingLeft: "3%" }}>&lt;p&gt;</h5>
-        <p>Profficient with Flutter, ReactJs & Express</p>
+        <p>Flutter, ReactJs & Express Developer</p>
+        <h5 style={{ paddingLeft: "3%" }}>&lt;/p&gt;</h5>
+        <button>Contact me!</button>
       </div>
+      
     </div>
   );
 };

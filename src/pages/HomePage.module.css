@@ -17,6 +17,13 @@
   font-weight: 100;
   font-style: italic;
 }
+.content p{
+  padding-left:6%;
+  font-size:10px;
+  color:grey;
+  letter-spacing:3px;
+  font-weight: 400;
+}
 .content span:hover {
   -webkit-animation: rubberband 0.8s linear;
   color:#08fdd8;
@@ -53,6 +60,27 @@
     transform: scale(1);
   }
 }
+.content button{
+  background: linear-gradient(to right, #06d4b5 50%, #1d1d1d 50%);
+  background-color: transparent;
+  width:35%;
+  
+  color:#06d4b5;
+  letter-spacing:2px;
+  font-weight: 500;
+  height:5vh;
+  margin-top:3vh;
+  margin-left:6%;
+  border-color:#06d4b5;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition:all 1s ease-out;
+}
+.content button:hover{
+  background-position: left bottom;
+  color:#1d1d1d;
+}
+
 .trail { /* className for the trail elements */
   position: absolute;
   height: 3px; width: 4px;
@@ -61,11 +89,20 @@
   /* size:10px; */
   /* background: linear-gradient(rgb(170, 66, 66),rgb(146, 12, 12)); */
 }
-@media only screen and (min-width: 1280px){
+
+@media only screen and (min-width: 1024px){
   .sidedisp{
       display:block;
   }
   .title span{
     font-size: 80px;
+  }
+  .content p{
+    font-size:20px;
+  }
+  .content button{
+    width:200px;
+    height:60px;
+    font-weight: 600;
   }
 }
