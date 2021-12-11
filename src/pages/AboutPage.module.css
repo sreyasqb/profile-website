@@ -1,5 +1,12 @@
+.aboutpage{
+  display:flex;
+
+}
+.sidedisp{
+  display:none;
+}
 .content {
-  width: 40%;
+  width: 100%;
   padding: 25vh 8%;
 }
 .content span {
@@ -7,7 +14,7 @@
   font-family: "Readex Pro", sans-serif;
   font-stretch: ultra-expanded;
   color: #08fdd8;
-  font-size: 60px;
+  font-size: 35px;
   transition: all 1s ease-in;
 }
 .content span:hover {
@@ -32,4 +39,17 @@
   100% {
     transform: scale(1);
   }
+}
+@media only screen and (min-width: 1024px){
+  .sidedisp{
+      display:block;
+  }
+  .content span{
+    font-size: 60px;
+    
+  }
+  .content{
+    width: 45%;
+  }
+
 }

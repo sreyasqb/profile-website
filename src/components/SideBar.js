@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 import classes from './SideBar.module.css';
 const SideBar = props=>{
     return(
@@ -8,7 +9,7 @@ const SideBar = props=>{
                 <p>Web Developer <br/>App Developer</p>
             </div>
             <ul>
-                <li>About</li>
+                <li><Link to="/about" style={{textDecoration:"none",color:"inherit"}}>About</Link></li>
                 <li>My skills</li>
                 <li>Work</li>
                 <li>Contact</li>
