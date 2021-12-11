@@ -1,15 +1,24 @@
-.aboutpage{
-  display:flex;
-
+.aboutpage {
+  display: flex;
 }
-.sidedisp{
-  display:none;
+.sidedisp {
+  display: none;
 }
 .content {
   width: 100%;
-  padding: 25vh 8%;
+  padding: 10vh 2%;
 }
-.content span {
+.content h5 {
+  font-family: "Caveat", cursive;
+  color: rgb(92, 91, 91);
+  font-size: 20px;
+  font-weight: 100;
+  font-style: italic;
+}
+.abouttitle{
+  padding:0 6%;
+}
+.abouttitle span {
   display: inline-block;
   font-family: "Readex Pro", sans-serif;
   font-stretch: ultra-expanded;
@@ -17,12 +26,13 @@
   font-size: 35px;
   transition: all 1s ease-in;
 }
-.content span:hover {
+.abouttitle span:hover {
   -webkit-animation: rubberband 0.8s linear;
 }
-.content p {
+.abouttitle p {
   color: white;
 }
+
 @keyframes rubberband {
   0% {
     transform: scale(1);
@@ -40,16 +50,14 @@
     transform: scale(1);
   }
 }
-@media only screen and (min-width: 1024px){
-  .sidedisp{
-      display:block;
+@media only screen and (min-width: 1024px) {
+  .sidedisp {
+    display: block;
   }
-  .content span{
+  .content span {
     font-size: 60px;
-    
   }
-  .content{
+  .content {
     width: 45%;
   }
-
 }

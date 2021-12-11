@@ -79,7 +79,7 @@ const HomePage = (props) => {
         <h5>&lt;html&gt;</h5>
         <h5 style={{ padding: "0 2%" }}>&lt;body&gt;</h5>
         <h5 style={{ padding: "12vh 0 0 3%" }}>&lt;h1&gt;</h5>
-        <div className={classes.title}>
+        <div className={classes.hometitle}>
           <span>H</span>
           <span>e</span>
           <span>y</span>
@@ -117,7 +117,7 @@ const HomePage = (props) => {
         </div>
         <h5 style={{ paddingLeft: "3%" }}>&lt;/h1&gt;</h5>
         <h5 style={{ paddingLeft: "3%" }}>&lt;p&gt;</h5>
-        <p>Flutter, ReactJs & Express Developer</p>
+        <p id={classes.specialText}>Flutter, ReactJs & Express Developer</p>
         <h5 style={{ paddingLeft: "3%" }}>&lt;/p&gt;</h5>
         <button>Contact me!</button>
       </div>
