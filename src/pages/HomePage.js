@@ -10,9 +10,9 @@ const HomePage = (props) => {
         <span>H</span>
         <span>e</span>
         <span>y</span>
-        <span>, </span>
+        <span>,&nbsp;</span>
         <span>I'</span>
-        <span>m </span>
+        <span>m&nbsp;</span>
         <span>S</span>
         <span>r</span>
         <span>e</span>
