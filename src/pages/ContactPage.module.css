@@ -1,0 +1,20 @@
+.contactpage{
+    display:flex;
+}
+.sidedisp{
+    display:none;
+}
+
+@media only screen and (min-width: 1024px) {
+    .sidedisp {
+      display: block;
+    }
+    .contactstitle span {
+      font-size: 60px;
+    }
+    .contactcontent {
+      width: 45%;
+      padding: 10vh 2%;
+    }
+  
+  }

@@ -29,8 +29,15 @@ const SideBar = (props) => {
             My Skills
           </Link>
         </li>
-        <li>Work</li>
-        <li>Contact</li>
+        {/* <li>Work</li> */}
+        <li>
+          <Link
+            to="/contact"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            Contact
+          </Link>
+        </li>
       </ul>
     </div>
   );
