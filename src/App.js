@@ -3,7 +3,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import SkillsPage from "./pages/SkillsPage";
-import ContactPage from "./pages/ContectPage";
+import ContactPage from "./pages/ContactPage";
 
 
 const App = () => {
