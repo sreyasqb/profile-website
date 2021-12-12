@@ -104,6 +104,7 @@
 }
 
 
+
 @keyframes rubberband {
   0% {
     transform: scale(1);
@@ -130,7 +131,7 @@
   }
   .contactcontent {
     width: 55%;
-    padding: 10vh 2%;
+    padding: 5vh 2%;
   }
   .name{
     width:220px;

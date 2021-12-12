@@ -1,4 +1,5 @@
 import React from "react";
+import CommonButton from "../components/CommonButton";
 import SideBar from "../components/SideBar";
 import classes from "./HomePage.module.css";
 
@@ -120,7 +121,8 @@ const HomePage = (props) => {
         <h5 style={{ paddingLeft: "3%" }}>&lt;p&gt;</h5>
         <p id={classes.specialText}>Flutter, ReactJs & Express Developer</p>
         <h5 style={{ paddingLeft: "3%" }}>&lt;/p&gt;</h5>
-        <button>Contact me!</button>
+        
+        <CommonButton title="Contact me!"/>
       </div>
       
     </div>

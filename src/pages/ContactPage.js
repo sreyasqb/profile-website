@@ -1,3 +1,4 @@
+import CommonButton from "../components/CommonButton";
 import SideBar from "../components/SideBar";
 import classes from "./ContactPage.module.css";
 
@@ -35,16 +36,17 @@ const ContactPage = (props) => {
           However, If you have any queries or requests, don't hesitate to use
           the form below.
         </p>
-        <h5 style={{ paddingLeft: "3%"}}>
-          &lt;/p&gt;
-        </h5>
-        <h5 style={{ paddingLeft: "3%",paddingTop:"2vh" }}>
-          &lt;form&gt;
-        </h5>
-        <input className={classes.name} placeholder="Name"/>
-        <input className={classes.email} placeholder="Email" type="email"/>
-        <input className={classes.subject} placeholder="Subject"/>
-        <textarea className={classes.message} placeholder="Message"/>
+        <h5 style={{ paddingLeft: "3%" }}>&lt;/p&gt;</h5>
+        <h5 style={{ paddingLeft: "3%", paddingTop: "2vh" }}>&lt;form&gt;</h5>
+        <input className={classes.name} placeholder="Name" />
+        <input className={classes.email} placeholder="Email" type="email" />
+        <input className={classes.subject} placeholder="Subject" />
+        <textarea className={classes.message} placeholder="Message" />
+
+        <CommonButton title="Send message!" />
+        <h5 style={{ paddingLeft: "3%", paddingTop: "2vh" }}>&lt;/form&gt;</h5>
+        <h5>&lt;/section&gt;</h5>
+
       </div>
     </div>
   );

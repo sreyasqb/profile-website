@@ -60,26 +60,7 @@
     transform: scale(1);
   }
 }
-.content button{
-  background: linear-gradient(to right, #06d4b5 50%, #1d1d1d 50%);
-  background-color: transparent;
-  width:35%;
-  
-  color:#06d4b5;
-  letter-spacing:2px;
-  font-weight: 500;
-  height:5vh;
-  margin-top:3vh;
-  margin-left:6%;
-  border-color:#06d4b5;
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition:all 1s ease-out;
-}
-.content button:hover{
-  background-position: left bottom;
-  color:#1d1d1d;
-}
+
 
 .trail { /* className for the trail elements */
   position: absolute;
