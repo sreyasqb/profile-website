@@ -2,9 +2,16 @@ import React from "react";
 import CommonButton from "../components/CommonButton";
 import SideBar from "../components/SideBar";
 import classes from "./HomePage.module.css";
+import {Link} from 'react-router-dom';
 
 const HomePage = (props) => {
   
+  const clickHandler=()=>{
+    return(
+      <Link to="/contact"/>
+    )
+  }
+
   var dots = [],
     mouse = {
       x: 0,
@@ -122,7 +129,7 @@ const HomePage = (props) => {
         <p id={classes.specialText}>Flutter, ReactJs & Express Developer</p>
         <h5 style={{ paddingLeft: "3%" }}>&lt;/p&gt;</h5>
         
-        <CommonButton title="Contact me!" type="text"/>
+        <CommonButton title="Contact me!" type="text" onClick={clickHandler}/>
       </div>
       
     </div>
