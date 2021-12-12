@@ -5,7 +5,7 @@ const SideBar = (props) => {
     <div className={classes.sidebar}>
       <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
         <div className={classes.logo}>
-          <h1>S</h1>
+          <h1>QB</h1>
           <p>
             Web Developer <br />
             App Developer

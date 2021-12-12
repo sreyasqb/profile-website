@@ -122,7 +122,7 @@ const HomePage = (props) => {
         <p id={classes.specialText}>Flutter, ReactJs & Express Developer</p>
         <h5 style={{ paddingLeft: "3%" }}>&lt;/p&gt;</h5>
         
-        <CommonButton title="Contact me!"/>
+        <CommonButton title="Contact me!" type="text"/>
       </div>
       
     </div>

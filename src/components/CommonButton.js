@@ -1,7 +1,13 @@
-import './CommonButton.module.css';
-const CommonButton=props=>{
-    return (
-        <button>{props.title}</button>
-    )
-}
-export default CommonButton;#done
+import "./CommonButton.module.css";
+const CommonButton = (props) => {
+  const clickHandler = (event) => {
+    if (props.type === "submit") event.preventDefault();
+    props.onClick();
+  };
+  return (
+    <button type={props.type} onClick={clickHandler}>
+      {props.title}
+    </button>
+  );
+};
+export default CommonButton;
