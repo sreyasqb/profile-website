@@ -21,6 +21,7 @@
 .abouttitle span {
   display: inline-block;
   font-family: "Readex Pro", sans-serif;
+  font-weight: 700;
   font-stretch: ultra-expanded;
   color: #08fdd8;
   font-size: 35px;

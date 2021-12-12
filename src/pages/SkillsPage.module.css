@@ -1,11 +1,67 @@
 .skillspage {
   display: flex;
 }
-.sidedisp{
-    display: none;
+.sidedisp {
+  display: none;
+}
+.skillscontent {
+  width: 100%;
+  padding: 2vh 2%;
+}
+.skillscontent h5 {
+  font-family: "Caveat", cursive;
+  color: rgb(92, 91, 91);
+  font-size: 20px;
+  font-weight: 100;
+  font-style: italic;
+}
+.skillstitle {
+  padding: 0 6%;
+}
+.skillstitle span {
+  display: inline-block;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 700;
+  font-stretch: ultra-expanded;
+  color: #08fdd8;
+  font-size: 35px;
+  transition: all 1s ease-in;
+}
+.skillstitle span:hover {
+  -webkit-animation: rubberband 0.8s linear;
+}
+.skillstitle p {
+  padding-left: 6%;
+  color: white;
+}
+
+@keyframes rubberband {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scaleX(1.25) scaleY(0.75);
+  }
+  40% {
+    transform: scaleX(0.75) scaleY(1.25);
+  }
+  60% {
+    transform: scaleX(1.15) scaleY(0.85);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 @media only screen and (min-width: 1024px) {
-    .sidedisp{
-        display: block;
-    }
+  .sidedisp {
+    display: block;
+  }
+  .skillstitle span {
+    font-size: 60px;
+  }
+  .skillscontent {
+    width: 45%;
+    padding: 10vh 2%;
+  }
+
 }
