@@ -3,6 +3,7 @@ import SideBar from "../components/SideBar";
 import classes from "./HomePage.module.css";
 
 const HomePage = (props) => {
+  
   var dots = [],
     mouse = {
       x: 0,

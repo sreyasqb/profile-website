@@ -10,7 +10,7 @@ const SideBar = props=>{
             </div>
             <ul>
                 <li><Link to="/about" style={{textDecoration:"none",color:"inherit"}}>About</Link></li>
-                <li>My skills</li>
+                <li><Link to="/skills" style={{textDecoration:"none",color:"inherit"}}>My Skills</Link></li>
                 <li>Work</li>
                 <li>Contact</li>
             </ul>

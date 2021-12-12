@@ -10,18 +10,14 @@ const AboutPage = (props) => {
         <h5>&lt;section&gt;</h5>
         <h5 style={{ paddingLeft: "3%", paddingTop: "5vh" }}>&lt;h2&gt;</h5>
         <div className={classes.abouttitle}>
-          <span>H</span>
+          <span>A</span>
+          <span>b</span>
+          <span>o</span>
+          <span>u</span>
+          <span>t&nbsp;</span>
+          <span>M</span>
           <span>e</span>
-          <span>y</span>
-          <span>,&nbsp;</span>
-          <span>I'</span>
-          <span>m&nbsp;</span>
-          <span>S</span>
-          <span>r</span>
-          <span>e</span>
-          <span>y</span>
-          <span>a</span>
-          <span>s</span>
+          
           <h5 style={{ paddingLeft: "0", display: "inline-block" }}>
             &lt;/h2&gt;
           </h5>
