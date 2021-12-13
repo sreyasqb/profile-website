@@ -4,6 +4,10 @@
 .sidedisp {
   display: none;
 }
+.appdisp{
+  position: absolute;
+  margin-left:calc(100% - 60px);
+}
 .content {
   width: 100%;
   padding: 10vh 2%;
@@ -54,6 +58,9 @@
 @media only screen and (min-width: 1024px) {
   .sidedisp {
     display: block;
+  }
+  .appdisp{
+    display:none;
   }
   .content span {
     font-size: 60px;

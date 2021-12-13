@@ -3,6 +3,7 @@ import SideBar from "../components/SideBar";
 import classes from "./ContactPage.module.css";
 import emailjs from "emailjs-com";
 import {useRef,useState} from 'react';
+import AppBar from "../components/AppBar";
 
 const ContactPage = (props) => {
   const form=useRef();
@@ -60,6 +61,9 @@ const ContactPage = (props) => {
     <div className={classes.contactpage}>
       <div className={classes.sidedisp}>
         <SideBar />
+      </div>
+      <div className={classes.appdisp}>
+        <AppBar/>
       </div>
       <div className={classes.contactcontent}>
         <h5>&lt;section&gt;</h5>

@@ -4,6 +4,10 @@
 .sidedisp {
   display: none;
 }
+.appdisp{
+  position: absolute;
+  margin-left:calc(100% - 60px);
+}
 .skillscontent {
   width: 100%;
   padding: 2vh 2%;
@@ -56,6 +60,9 @@
 @media only screen and (min-width: 1024px) {
   .sidedisp {
     display: block;
+  }
+  .appdisp{
+    display:none;
   }
   .skillstitle span {
     font-size: 60px;

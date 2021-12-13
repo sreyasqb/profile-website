@@ -1,10 +1,14 @@
 import SideBar from "../components/SideBar";
 import classes from "./SkillsPage.module.css";
+import AppBar from "../components/AppBar";
 const SkillsPage = (props) => {
   return (
     <div className={classes.skillspage}>
       <div className={classes.sidedisp}>
         <SideBar />
+      </div>
+      <div className={classes.appdisp}>
+        <AppBar/>
       </div>
       <div className={classes.skillscontent}>
         <h5>&lt;section&gt;</h5>
