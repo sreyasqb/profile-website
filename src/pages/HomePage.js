@@ -1,16 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import CommonButton from "../components/CommonButton";
 import SideBar from "../components/SideBar";
 import classes from "./HomePage.module.css";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const HomePage = (props) => {
-  
-  const clickHandler=()=>{
-    return(
-      <Link to="/contact"/>
-    )
-  }
+  const [clicked, setClicked] = useState(false);
+  const clickHandler = () => {
+    setClicked(true);
+  };
 
   var dots = [],
     mouse = {
@@ -79,7 +77,11 @@ const HomePage = (props) => {
   animate();
 
   return (
+    
     <div className={classes.homepage}>
+      {/* {clicked && <Link to="/contact">} */}
+      
+
       <div className={classes.sidedisp}>
         <SideBar />
       </div>
@@ -128,8 +130,9 @@ const HomePage = (props) => {
         <h5 style={{ paddingLeft: "3%" }}>&lt;p&gt;</h5>
         <p id={classes.specialText}>Flutter, ReactJs & Express Developer</p>
         <h5 style={{ paddingLeft: "3%" }}>&lt;/p&gt;</h5>
-        
+
         <CommonButton title="Contact me!" type="text" onClick={clickHandler}/>
+
       </div>
       
     </div>

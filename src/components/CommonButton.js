@@ -7,6 +7,7 @@ const CommonButton = (props) => {
   return (
     <button type={props.type} onClick={clickHandler}>
       {props.title}
+      {props.children}
     </button>
   );
 };
