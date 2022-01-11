@@ -6,13 +6,14 @@ import { Link } from "react-router-dom";
 import AppBar from "../components/AppBar";
 
 const HomePage = (props) => {
+  let dots = [];
   
   const clickHandler = () => {
     
   };
 
-  var dots = [],
-    mouse = {
+  
+    let mouse = {
       x: 0,
       y: 0,
     };
